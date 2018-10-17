@@ -67,9 +67,9 @@ public class StudentDAOImpl implements IStudentDAO {
 
     @Override
     public int insert(Student student) {
-        String sql="insert into student(sno,sname,ssex,sage,sdept) values(?,?,?,?,?)";
+        String sql="insert into student(sno,sname,ssex,sage,sdept,birthday) values(?,?,?,?,?,?)";
 
-        return UpdateQuery.Update(sql,student.getSno(),student.getSname(),student.getSsex(),student.getSage(),student.getSdept());
+        return UpdateQuery.Update(sql,student.getSno(),student.getSname(),student.getSsex(),student.getSage(),student.getSdept(),student.getBirthday());
     }
 
     @Override

@@ -28,6 +28,6 @@
      out.print("</table>");
    %>
 
-
+  <a href="add.jsp">添加</a>
   </body>
 </html>
